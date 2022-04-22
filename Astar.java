@@ -2,7 +2,7 @@ package applications;
 
 import java.util.PriorityQueue;
 
-public class AStar { //on average fastest path finding algorithm!
+public class AStar { 
 
 	public static final int DiagonalCost = 14;
 	public static final int VHCost = 10;
@@ -195,16 +195,16 @@ public class AStar { //on average fastest path finding algorithm!
 				for(int j = 0; j < grid[i].length; j++) {
 					
 					if(i == startI && j == startJ) {
-						//System.out.print("SO  ");			//SOURCE CELL
+						System.out.print("SO  ");			//SOURCE CELL
 					}
 					else if(i == endI && j == endJ) { 
-						//System.out.println("DE  "); 		//END CELL
+						System.out.println("DE  "); 		//END CELL
 					}
 					else if(grid[i][j] != null) {
 						System.out.printf("%-3s", grid[i][j].solution ? "X" : "0");
 					}
 					else {
-						//System.out.print("BL  ");
+						System.out.print("BL  ");
 					}
 					System.out.println();
 				}

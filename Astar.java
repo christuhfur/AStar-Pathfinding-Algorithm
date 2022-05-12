@@ -217,9 +217,11 @@ public class AStar {
 	
 	
 	public static void main(String[] args) {
+		
 		AStar aStar = new AStar(4, 4, 3, 3, 0, 0, new int[][] {  {0,1}, {1,1}, {1,2}, {1,3}, {2,3}, {2,2},} );
 		
 		aStar.process();
 		aStar.displaySolution();
+		//aStar.displayPath
 	}
 }
